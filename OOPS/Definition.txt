@@ -1,0 +1,28 @@
+Encapsulation
+    It is defined as the wrapping up of data & methods under a single unit.
+    It also implements data hiding.
+Inheritance
+    Inheritance is when properties and methods of base class are passed on to the derived class.
+Abstraction
+    Hiding all the unnecessary details and showing only the important part to the user.
+Polymorphism
+    Many forms
+    Compile time Polymorphism
+        method overloading
+    Run time Polymorphism
+        method overriding
+            parent and child have same methods with different definition
+            calls the type of object you created
+Package
+    Groups of Similar type of classes, interfaces and sub-packages. 
+Interfaces
+It is blueprint of a class
+    multiple Inheritance
+    100% Abstraction
+    All methods are abstract and without implementation
+    Used ot acheive total Abstraction
+    Variables in the interface are final, public and static.
+
+Static
+    static keyword in JAVA is used to share the same variable or method of a given class.
+
