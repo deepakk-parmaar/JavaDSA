@@ -52,7 +52,7 @@ public class BinaryTreeB{
             if(root==null){
                 return;
             }
-            Queue<Node> q=new LinkedList<>();
+            Queue<Node> q=new java.util.LinkedList<>();
             q.add(root);
             q.add(null);
 

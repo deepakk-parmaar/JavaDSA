@@ -3,7 +3,7 @@ import java.util.*;
 public class Interleave {
 
     public static void interLeave(Queue<Integer> q) {
-        Queue <Integer>firstHalf= new LinkedList<>(); 
+        Queue <Integer>firstHalf= new java.util.LinkedList<>(); 
         int size = q.size();
         
         for(int i=0;i<size/2;i++){
@@ -17,7 +17,7 @@ public class Interleave {
     }
     
     public static void main(String[] args) {
-        Queue <Integer> q  = new LinkedList<>();
+        Queue <Integer> q  = new java.util.LinkedList<>();
         q.add(1);
         q.add(2);
         q.add(3);

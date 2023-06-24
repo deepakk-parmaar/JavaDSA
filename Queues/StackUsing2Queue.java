@@ -1,11 +1,10 @@
 import java.util.*;
 
-import javax.swing.text.html.StyleSheet;
 public class StackUsing2Queue{
 
     static class Stack{
-        static Queue<Integer> q1= new LinkedList<>();
-        static Queue<Integer> q2= new LinkedList<>();
+        static Queue<Integer> q1= new java.util.LinkedList<>();
+        static Queue<Integer> q2= new java.util.LinkedList<>();
 
         public static boolean isEmpty() {
             return q1.isEmpty() && q2.isEmpty();
