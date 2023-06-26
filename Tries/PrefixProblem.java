@@ -1,7 +1,7 @@
 public class PrefixProblem {
     static class Node{
         Node[] children = new Node[26];
-        boolean endOfWord;
+        boolean endOfWord=false;
         int freq;
         Node(){
             for(int i=0;i<26;i++){
@@ -38,25 +38,40 @@ public class PrefixProblem {
         return curr.endOfWord==true;
     }
 
-    public static boolean wordBreak(String key) {
-        if(key.length()==0){
-            return true;
+    //function to print all the words in the trie
+    public static void printAllWords(Node root,String word){
+        if(root.endOfWord){
+            System.out.println(word);
         }
-        for(int i=1;i<=key.length();i++){
-            if(search(key.substring(0, i))&&wordBreak(key.substring(i))){
-                return true;
+        for(int i=0;i<26;i++){
+            if(root.children[i]!=null){
+                printAllWords(root.children[i],word+(char)(i+'a'));//
             }
         }
-        return false;
+    }
+
+    public static void findPrefix(Node root, String ans, int idx){
+        if(root==null){
+            return;
+        }
+        if(root.freq==1){
+            System.out.println(ans);
+            return;
+        }
+
+        for(int i=0;i<root.children.length;i++){
+            if(root.children[i]!=null){
+                findPrefix(root.children[i], ans+(char)(i+'a'), idx+1);
+            }
+        }
     }
     public static void main(String[] args) {
-        String arr[]={"i","like","samsung"};
-
+        String arr[]={"zebra","duck","dog","dove"};
+        trie.freq=-1;
         for(int i=0;i<arr.length;i++){
             insert(arr[i]);
         }
-        String key="ilikesamsung";
-
-        System.out.println(wordBreak(key));
+        System.out.println("Prefixes are: ");
+        findPrefix(trie,"",0);
     }
 }
