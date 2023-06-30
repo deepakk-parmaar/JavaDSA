@@ -1,3 +1,5 @@
+package Graphs1;
+
 import java.util.*;
 
 public class BFS {

@@ -1,3 +1,4 @@
+package Graphs1;
 import java.util.*;
 public class GraphsPart1{
     static class Edge{
