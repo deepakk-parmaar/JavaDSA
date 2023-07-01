@@ -63,17 +63,6 @@ public class DijkstraAlgo {
         }
     }
 
-    public static void dijikstra(Graph graph,int src){
-        boolean visited[] = new boolean[graph.V];
-        PriorityQueue<Pair> pq = new PriorityQueue<>();
-        pq.add(new Pair(src, src + "", 0));
-        while (!pq.isEmpty()) {
-            Pair curr = pq.remove();
-            for (Edge e : graph.adjList[curr.vertex]) {
-                
-            }
-        }
-    }
     public static void main(String[] args) {
         //Create a graph with 8 veritces with many edges and different weights
         Graph graph = new Graph(9);
