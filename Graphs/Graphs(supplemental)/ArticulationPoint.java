@@ -21,6 +21,9 @@ public class ArticulationPoint {
             for (int i = 0; i < V; i++) {
                 adjList[i] = new ArrayList<Edge>();
             }
+            for (int i = 0; i < V; i++) {
+                adjList[i] = new ArrayList<Edge>();
+            }
         }
 
         void addEdge(int src, int dest, int weight) {
