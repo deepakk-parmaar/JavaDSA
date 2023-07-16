@@ -1,4 +1,4 @@
-package DynamicProgramming.DP6;
+package DP6;
 
 public class MinPartition {
 
